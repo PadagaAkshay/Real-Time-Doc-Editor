@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Collaborative Document Editor</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 3rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 600px;
+            margin: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #4f46e5;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin: 0.5rem;
+        }
+        .btn:hover {
+            background: #4338ca;
+            transform: translateY(-2px);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .feature h3 {
+            color: #fbbf24;
+            margin-bottom: 0.5rem;
+        }
+        code {
+            background: rgba(0,0,0,0.3);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Real-time Collaborative Document Editor</h1>
+        <p>
+            A modern collaborative document editor built with <strong>React.js</strong>, 
+            <strong>Node.js</strong>, and <strong>MongoDB</strong>. 
+            Create, edit, and collaborate on documents in real-time!
+        </p>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>⚡ React.js Frontend</h3>
+                <p>Dynamic and responsive UI with modern design</p>
+            </div>
+            <div class="feature">
+                <h3>🚀 Node.js Backend</h3>
+                <p>Powerful server with Socket.io for real-time communication</p>
+            </div>
+            <div class="feature">
+                <h3>💾 MongoDB Storage</h3>
+                <p>Reliable data storage with auto-save functionality</p>
+            </div>
+        </div>
+        
+        <a href="http://localhost:3000" class="btn">🌟 Launch Application</a>
+        <br>
+        <a href="README.md" class="btn">📖 View Documentation</a>
+        
+        <div style="margin-top: 2rem; padding: 1rem; background: rgba(0,0,0,0.2); border-radius: 8px;">
+            <h3>🚀 Quick Start:</h3>
+            <p style="font-size: 1rem; margin: 0.5rem 0;">
+                1. Backend: <code>cd collab-editor-backend && npm start</code><br>
+                2. Frontend: <code>cd collab-editor-frontend && npm start</code><br>
+                3. Visit <a href="http://localhost:3000" style="color: #fbbf24;">http://localhost:3000</a>
+            </p>
+        </div>
+        
+        <div style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.8;">
+            <p>✅ Backend Server: Running on http://localhost:5000</p>
+            <p>✅ Frontend App: Running on http://localhost:3000</p>
+            <p>✅ MongoDB: Connected and ready</p>
+        </div>
+    </div>
+</body>
+</html>
